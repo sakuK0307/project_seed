@@ -45,9 +45,14 @@ img {
 }
 
 .header-logo {
-    display: block;
-    width: 170px;
+    width: 70px;
+    display:flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;    
+
 }
+
 
 .site-menu ul{
     display:flex;
@@ -79,4 +84,3 @@ img {
     font-weight: bold;
     margin-top: 90px;
 }
-
