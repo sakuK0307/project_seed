@@ -1,11 +1,21 @@
-.section-title{
-    position:center;
+.section-area{
     text-align:center;
+}
+.section-title{
+    display:inline-block;
+    text-align:center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #fff9ec;
+    border-radius: 10px;
+
 }
 .map{
     position:center;
     text-align:center; 
 }
 .acces-info{
-    margin-top: 10px;
+    font-size:17px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
