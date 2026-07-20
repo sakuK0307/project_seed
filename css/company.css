@@ -1,0 +1,14 @@
+.acces-info {
+    width: 80%;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.acces-info ul {
+    list-style: disc;
+    padding-left: 1.5em;
+}
+
+.acces-info li {
+    margin-bottom: 8px;
+}
