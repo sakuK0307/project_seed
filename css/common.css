@@ -50,9 +50,41 @@ img {
     font-weight: bold;
     justify-content: center;
     align-items: center;    
-
 }
 
+.logo-container {
+    position: relative;   /* 重ねる基準 */
+    width: 70px;          /* ロゴ全体の横幅 */
+    height: 70px;         /* ロゴ全体の縦幅 */
+    margin-right: 10px;   /* 「GEARNA」の文字との間に少し隙間を作る */
+    flex-shrink: 0;       /* 画像が潰れるのを防ぐ */
+}
+
+/* 1枚目の画像（月：土台になる） */
+.logo-moon {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;  /* 画像を潰さずに枠内に収める */
+}
+
+/* 2枚目の画像（歯車：上にぴったり重ねる） */
+.logo-gear {
+    position: absolute;   /* 枠を基準に配置 */
+    top: 0;               /* 上ぴったり */
+    right:5%;              /* 左ぴったり */
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+    /* さっきお話しした「アニメーション（回転）」の設定もここに仕込めます */
+    transition: transform 0.5s ease;
+}
+
+/* ロゴエリア全体にマウスが乗ったとき、上の歯車だけを回転させる場合 */
+.header-logo:hover .logo-gear {
+    transform: rotate(180deg); /* 例：ホバーで歯車が45度カチッと回る */
+}
 
 .site-menu ul{
     display:flex;
@@ -190,6 +222,11 @@ img {
     .header-logo{
         width:50px;
         margin-left:30px;
+    }
+
+    .logo-container{
+        width: 50px;          /* ロゴ全体の横幅 */
+    height: 50px;
     }
 
     .main{
