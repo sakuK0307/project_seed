@@ -63,6 +63,11 @@ img {
     margin-right: 30px;
 }
 
+.site-menu ul li:hover {
+  color: #9ddeff; /* 薄い水色にハイライト */
+  cursor: pointer; /* カーソルを指マークにする */
+}
+
 .footer {
     color: #ffffff;
     background-color: #24211b;
@@ -79,8 +84,126 @@ img {
     margin-top: 90px;
 }
 
+.footer .site-menu ul{
+    display:flex;
+    flex-flow: column;
+    margin-top: 30px;
+        align-items: center;
+}
+
+.footer .site-menu ul li{
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.footer img{
+    display: block;
+    width: 150px;
+    margin-top: 40px;
+    margin-right:10px
+}
+
 .copyright {
     font-size: 14pt;
     font-weight: bold;
-    margin-top: 90px;
+    margin-top: 30px;
+}
+
+.footer .site-menu ul li:hover {
+    color: #bbf7ff;
+    cursor: pointer;
+}
+
+@media (max-width:800px){
+    .site-menu ul{
+        display:block;
+        text-align: center;
+    }
+
+    .site-menu li{
+        margin-top:20px;
+    }
+
+    .header{
+        position:fixed;
+        top:0;
+        left:0;
+        right:0;
+        background-color:#ffffff;
+        height:50px;
+        z-index:100;
+        box-shadow:0 3px 6px rgba(0,0,0,0.1);
+        transform-style: preserve-3d;
+    }
+
+    .header-inner{
+        padding-left:20px;
+        padding-right:20px;
+        height: 100%;
+        transform-style: preserve-3d;
+    }
+
+    .header-site-menu{
+        position:absolute;
+        top:100%;
+        left:0;
+        right:0;
+        color:rgb(0, 0, 0);
+        background-color: #ffffff;
+        padding-top:30px;
+        padding-bottom:50px;
+
+        opacity: 0;                     
+        visibility: hidden;             
+        transform: translateY(-300px) translateZ(-1px); 
+        transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+    }
+    
+
+    .header-site-menu.is-show{
+        opacity: 1;           
+        visibility: visible;  
+        transform: translateY(0) translateZ(-1px);
+    }
+
+    .toggle-menu-button{
+        display: block;
+        width: 44px;
+        height: 34px;
+        background-image: url(../images/common/icon-menu.png);
+        background-size: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border:none;
+        border-radius:0;
+        outline:none;
+
+    }
+
+    .footer{
+        padding-bottom: 100px
+    }
+
+    .header-logo{
+        width:50px;
+        margin-left:30px;
+    }
+
+    .main{
+        padding-top:50px;
+    }
+
+    .footer-logo{
+        margin-top:60px;
+    }
+
+    .copyright{
+        margin-top:50px;
+    }
+
+
+
 }
