@@ -50,13 +50,19 @@ img {
     font-weight: bold;
     justify-content: center;
     align-items: center;    
+    padding-left:50px;
+}
+
+.logo-name{
+    font-size:30px
 }
 
 .logo-container {
     position: relative;   /* 重ねる基準 */
     width: 70px;          /* ロゴ全体の横幅 */
     height: 70px;         /* ロゴ全体の縦幅 */
-    margin-right: 10px;   /* 「GEARNA」の文字との間に少し隙間を作る */
+    margin-right: 5px;   /* 「GEARNA」の文字との間に少し隙間を作る */
+    margin-left: 10px;
     flex-shrink: 0;       /* 画像が潰れるのを防ぐ */
 }
 
@@ -93,6 +99,7 @@ img {
 .site-menu ul li {
     margin-left: 30px;
     margin-right: 30px;
+    font-size:25px
 }
 
 .site-menu ul li:hover {
@@ -221,7 +228,11 @@ img {
 
     .header-logo{
         width:50px;
-        margin-left:30px;
+        padding-left:40px;
+    }
+
+    .logo-name{
+        font-size: 20px;
     }
 
     .logo-container{
