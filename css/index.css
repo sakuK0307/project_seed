@@ -1,17 +1,22 @@
-.time-machine {/*親div*/
-  position: relative;/*相対配置*/
-  }
-
-.time-machine p{
-    color:aliceblue;
-    position: absolute;
-    font-size:2em;
-    font-weight:bold;
-    font-family: 'Shippori Mincho', serif;
-    top:0;
-    left:0;
+.time-machine{
+    position: relative;
 }
 
-.time-machine img {
-  width: 100%;
-  }
+.time-machine img{
+    width:100%;
+    display:block;
+}
+
+.text{
+    position:absolute;
+    top:20%;
+    left:8%;
+    color:white;
+}
+
+.text p{
+    margin:0;
+    font-size:48px;
+    line-height:1.5; /* 行間 */
+    font-family: 'Sippori Mincho',serif;
+}
