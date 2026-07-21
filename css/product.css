@@ -38,5 +38,11 @@
     padding-top:40px;
     box-shadow: 0 0 6px gray;
     margin-bottom:50px;
+        list-style: none;
 
+}
+
+.telephone{
+    padding-top:50px;
+    font-size:20px;
 }
