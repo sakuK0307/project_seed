@@ -1,14 +1,62 @@
-.acces-info {
+
+.company-text{
+    width:80%;
+    padding-top:20px;
+    padding-left: 40px;
+    padding-right:40px;
+    padding-bottom: 20px;
+    box-shadow:0 0 6px gray;
+    border-radius: 10px;
+    margin-top:20px;
+    font-family: "Noto Sans JP", sans-serif;
+    border-left: 6px solid #1f3a5f;
+    margin-left: auto;
+    margin-right: auto;
+}
+.map{
+    margin-top:40px;
+}
+.access-info {
     width: 80%;
     margin: 20px auto;
     text-align: left;
 }
 
-.acces-info ul {
+.access-info ul {
     list-style: disc;
     padding-left: 1.5em;
 }
 
-.acces-info li {
+.access-info li {
     margin-bottom: 8px;
+}
+.company-table{
+    width:80%;
+    max-width:1000px;
+    border-collapse: collapse;
+    margin:40px auto;
+}
+
+.company-table th,.company-table td{
+    padding:20px;
+    border-bottom: 1px solid #c8d7f0;
+    text-align:left;
+}
+.sub-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px; /* 300pxではなく、適度な余白を指定 */
+    color: rgb(0, 0, 0);
+}
+.sub-title h1{
+    font-family: sans-serif;
+    font-size:32pt;
+    font-weight: bold;
+}
+.sub-title h2{
+    padding-top:20px;
+    font-family: sans-serif;
+    font-size:16pt;
 }
