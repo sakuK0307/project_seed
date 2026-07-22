@@ -25,6 +25,8 @@
     width: 80%;
     margin: 20px auto;
     text-align: left;
+    font-family: "Noto Sans JP",sans-serif;
+    font-size:16px;
 }
 
 .access-info ul {
@@ -54,6 +56,10 @@
     align-items: center;
     padding-top: 40px; /* 300pxではなく、適度な余白を指定 */
     color: rgb(0, 0, 0);
+    border-bottom: 2px solid #6b6b6b;
+    padding-bottom: 10px;
+    border-width: auto;
+    
 }
 .sub-title h1{
     font-family: sans-serif;
