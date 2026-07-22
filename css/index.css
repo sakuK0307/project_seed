@@ -16,7 +16,7 @@
 
 .text p{
     margin:0;
-    font-size:48px;
+    font-size:clamp(1.5rem, 4vw, 3rem);
     line-height:1.5; /* 行間 */
     font-family: 'Sippori Mincho',serif;
 }
